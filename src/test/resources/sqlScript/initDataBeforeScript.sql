@@ -16,3 +16,15 @@ values (7777,'Test','Test','Test',9999,'2023-06-20');
 
 insert into store(idstore, namestore, citystore, streetstore, iddirectorstore, dateopenstore)
 values (8888,'Test','Test','Test',9999,'2023-06-20');
+
+insert into author(idauthor, nameauthor, sonameauthor, fanameauthor, dateaddtoauthor)
+SELECT 7777,'Test','Test','Test','2023-06-20' WHERE
+    NOT EXISTS (
+        SELECT idauthor FROM author WHERE idauthor = 7777
+    );
+
+insert into author(idauthor, nameauthor, sonameauthor, fanameauthor, dateaddtoauthor)
+SELECT 8888,'Test','Test','Test','2023-06-20' WHERE
+    NOT EXISTS (
+        SELECT idauthor FROM author WHERE idauthor = 8888
+    );

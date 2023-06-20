@@ -2,7 +2,6 @@ package io.bookstore.dao.implementation;
 
 import io.bookstore.dao.api.AuthorDaoApi;
 import io.bookstore.domain.Author;
-import io.bookstore.domain.Director;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
