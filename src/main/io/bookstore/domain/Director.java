@@ -16,7 +16,6 @@ public class Director {
     private String nameDirector;
     private String sonameDirector;
     private Integer ageDirector;
-    private Long idStoreDirector;
     private Date dateGetPositionDirector;
 
 
