@@ -13,7 +13,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
-public class AppConfig {
+public class DataBaseConfig {
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -33,7 +33,6 @@ public class AppConfig {
                 .type(HikariDataSource.class)
                 .build();
     }
-
 
     @Bean
     public JdbcTemplate getJdbcTeamplate(){
