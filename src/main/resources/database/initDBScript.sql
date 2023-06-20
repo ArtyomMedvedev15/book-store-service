@@ -11,7 +11,7 @@ create table if not exists Store(
                       nameStore varchar,
                       cityStore varchar,
                       streetStore varchar,
-                      idDirectorStore int REFERENCES Director(id),
+                      idDirectorStore int REFERENCES Director(id) on delete cascade,
                       dateOpenStore date
 );
 

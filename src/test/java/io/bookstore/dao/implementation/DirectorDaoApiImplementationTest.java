@@ -1,4 +1,4 @@
-package io.bookstore.dao;
+package io.bookstore.dao.implementation;
 
 import io.bookstore.dao.api.DirectorDaoApi;
 import io.bookstore.domain.Director;
