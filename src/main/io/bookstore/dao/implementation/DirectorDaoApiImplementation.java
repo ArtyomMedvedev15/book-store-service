@@ -56,7 +56,7 @@ public class DirectorDaoApiImplementation implements DirectorDaoApi {
     }
 
     @Override
-    public boolean DeleteDerector(Long idDirector) {
+    public boolean deleteDirector(Long idDirector) {
         int delete_result = databaseConnection.update(DELETE_ONE_QUERY,idDirector);
         if(delete_result>0) {
             log.info("Delete director with id {} in {}", idDirector, new Date());

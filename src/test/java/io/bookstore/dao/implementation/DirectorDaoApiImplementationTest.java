@@ -79,7 +79,7 @@ class DirectorDaoApiImplementationTest{
 
     @Test
     void DeleteDerectorTest_ReturnTrue() {
-        boolean delete_result = directorDaoApi.DeleteDerector(7777L);
+        boolean delete_result = directorDaoApi.deleteDirector(7777L);
         assertTrue(delete_result);
     }
 

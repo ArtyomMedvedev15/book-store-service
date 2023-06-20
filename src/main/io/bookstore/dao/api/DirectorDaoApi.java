@@ -8,6 +8,6 @@ public interface DirectorDaoApi {
     boolean saveDirector(Director directorSave);
     boolean updateDirector(Director directorUpdate);
     Director getById(Long idDirector);
-    boolean DeleteDerector(Long idDirector);
+    boolean deleteDirector(Long idDirector);
     List<Director>getAll();
 }
