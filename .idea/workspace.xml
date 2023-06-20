@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Store dao api implementation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/StoreDaoApiImplementationTest.java" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Author dao api">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/dao/implementation/AuthorDaoApiImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database/initDBScript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/initDBScript.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/DirectorDaoApiImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/DirectorDaoApiImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/afterDataScript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sqlScript/afterDataScript.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/initDBBeforeScript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sqlScript/initDBBeforeScript.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/initDataBeforeScript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sqlScript/initDataBeforeScript.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,16 +17,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit3 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="store_dao" />
+        <entry key="$PROJECT_DIR$" value="dao" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,28 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "last_directory_selection": "U:/Work/book-store-service/book-store-service/src/main/io/bookstore",
-    "last_opened_file_path": "U:/Work/book-store-service/book-store-service/src/test/resources/sqlScript",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "spring.configuration.checksum": "53de76a36d0034c148cec5c4f012ab4d"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;last_directory_selection&quot;: &quot;U:/Work/book-store-service/book-store-service/src/main/io/bookstore&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Work/book-store-service/book-store-service/src/test/resources/sqlScript&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;53de76a36d0034c148cec5c4f012ab4d&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="U:\Work\book-store-service\book-store-service\src\test\resources\sqlScript" />
@@ -245,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687256542923</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Author dao api">
+      <created>1687272445393</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687272445393</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +275,7 @@
     <MESSAGE value="Director dao implementation" />
     <MESSAGE value="Store dao api" />
     <MESSAGE value="Store dao api implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store dao api implementation" />
+    <MESSAGE value="Author dao api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Author dao api" />
   </component>
 </project>

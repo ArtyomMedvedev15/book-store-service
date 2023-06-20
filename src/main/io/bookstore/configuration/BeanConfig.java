@@ -1,7 +1,9 @@
 package io.bookstore.configuration;
 
+import io.bookstore.dao.api.AuthorDaoApi;
 import io.bookstore.dao.api.DirectorDaoApi;
 import io.bookstore.dao.api.StoreDaoApi;
+import io.bookstore.dao.implementation.AuthorDaoApiImplementation;
 import io.bookstore.dao.implementation.DirectorDaoApiImplementation;
 import io.bookstore.dao.implementation.StoreDaoApiImplementation;
 import org.springframework.context.annotation.Bean;
@@ -18,5 +20,10 @@ public class BeanConfig {
     @Bean
     public StoreDaoApi getStoreDaoApiImpl(){
         return new StoreDaoApiImplementation();
+    }
+
+    @Bean
+    public AuthorDaoApi getAuthorDaoApiImpl(){
+        return new AuthorDaoApiImplementation();
     }
 }
