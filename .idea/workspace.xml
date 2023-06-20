@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/Store.java" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Store domain">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/domain/Director.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "U:/Work/book-store-service/book-store-service/src/main/io/bookstore"
   }
 }]]></component>
   <component name="RunManager">
@@ -72,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687245921458</updated>
-      <workItem from="1687245924354" duration="1344000" />
+      <workItem from="1687245924354" duration="1683000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1687246953523</created>
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687246953523</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Store domain">
+      <created>1687247500231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687247500231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Store domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store domain" />
   </component>
 </project>
