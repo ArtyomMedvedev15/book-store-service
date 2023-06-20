@@ -1,8 +1,12 @@
 package io.bookstore.configuration;
 
 
+import com.zaxxer.hikari.HikariDataSource;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
@@ -21,8 +25,19 @@ public class AppConfig {
     }
 
     @Bean
+    @Primary
+    @ConfigurationProperties("bookstore.pollconn")
+    public HikariDataSource hikariDataSource() {
+        return DataSourceBuilder
+                .create()
+                .type(HikariDataSource.class)
+                .build();
+    }
+
+
+    @Bean
     public JdbcTemplate getJdbcTeamplate(){
-        return new JdbcTemplate(getDataSource());
+        return new JdbcTemplate(hikariDataSource());
     }
 
 }
