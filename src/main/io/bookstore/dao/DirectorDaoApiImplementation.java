@@ -51,7 +51,7 @@ public class DirectorDaoApiImplementation implements DirectorDaoApi{
     @Override
     public Director getById(Long idDirector) {
         log.info("Get director by id - {} in {}",idDirector,new Date());
-        return databaseConnection.queryForObject(SELECT_ONE_QUERY, new BeanPropertyRowMapper<>(Director.class));
+        return databaseConnection.queryForObject(SELECT_ONE_QUERY, new BeanPropertyRowMapper<>(Director.class),idDirector);
     }
 
     @Override

@@ -1,0 +1,2 @@
+insert into director(id,namedirector, sonamedirector, agedirector, dategetpositiondirector) values(9999,'Test','Test',54,'2023-06-20');
+insert into director(id,namedirector, sonamedirector, agedirector, dategetpositiondirector) values(7777,'TestDelete','Test',54,'2023-06-20');
