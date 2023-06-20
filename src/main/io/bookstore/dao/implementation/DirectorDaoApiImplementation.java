@@ -1,5 +1,6 @@
-package io.bookstore.dao;
+package io.bookstore.dao.implementation;
 
+import io.bookstore.dao.api.DirectorDaoApi;
 import io.bookstore.domain.Director;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 @Slf4j
-public class DirectorDaoApiImplementation implements DirectorDaoApi{
+public class DirectorDaoApiImplementation implements DirectorDaoApi {
 
     @Autowired
     private JdbcTemplate databaseConnection;
@@ -22,7 +23,7 @@ public class DirectorDaoApiImplementation implements DirectorDaoApi{
     private static final String SELECT_ALL_QUERY = "select * from director";
 
     @Override
-    public boolean saveDicrector(Director directorSave) {
+    public boolean saveDirector(Director directorSave) {
         int save_result = databaseConnection.update(INSERT_QUERY,directorSave.getNameDirector(),directorSave.getSonameDirector(),
                 directorSave.getAgeDirector(),directorSave.getDateGetPositionDirector());
         if(save_result>0) {

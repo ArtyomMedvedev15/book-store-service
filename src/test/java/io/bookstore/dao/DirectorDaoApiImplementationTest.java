@@ -1,5 +1,6 @@
 package io.bookstore.dao;
 
+import io.bookstore.dao.api.DirectorDaoApi;
 import io.bookstore.domain.Director;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -53,7 +54,7 @@ class DirectorDaoApiImplementationTest{
                 .dateGetPositionDirector(new Date(new java.util.Date().getTime()))
                 .build();
 
-        boolean save_result = directorDaoApi.saveDicrector(directorSave);
+        boolean save_result = directorDaoApi.saveDirector(directorSave);
 
         assertTrue(save_result);
 

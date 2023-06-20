@@ -1,7 +1,7 @@
 package io.bookstore.configuration;
 
-import io.bookstore.dao.DirectorDaoApi;
-import io.bookstore.dao.DirectorDaoApiImplementation;
+import io.bookstore.dao.api.DirectorDaoApi;
+import io.bookstore.dao.implementation.DirectorDaoApiImplementation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

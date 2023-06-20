@@ -1,11 +1,11 @@
-package io.bookstore.dao;
+package io.bookstore.dao.api;
 
 import io.bookstore.domain.Director;
 
 import java.util.List;
 
 public interface DirectorDaoApi {
-    boolean saveDicrector(Director directorSave);
+    boolean saveDirector(Director directorSave);
     boolean updateDirector(Director directorUpdate);
     Director getById(Long idDirector);
     boolean DeleteDerector(Long idDirector);
