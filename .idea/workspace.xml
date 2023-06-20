@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Director dao implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/dao/api/StoreDaoApi.java" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Store dao api">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/dao/implementation/StoreDaoApiImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/dao/DirectorDaoApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/dao/api/DirectorDaoApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/dao/DirectorDaoApiImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/dao/implementation/DirectorDaoApiImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/DirectorDaoApiImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/DirectorDaoApiImplementationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -224,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687253063768</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Store dao api">
+      <created>1687255768074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687255768074</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +253,7 @@
     <MESSAGE value="Create pool connection" />
     <MESSAGE value="Director dao api" />
     <MESSAGE value="Director dao implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Director dao implementation" />
+    <MESSAGE value="Store dao api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store dao api" />
   </component>
 </project>
