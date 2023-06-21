@@ -54,4 +54,14 @@ public class DirectorController {
         }
     }
 
+    @DeleteMapping("/delete/{idDirector}")
+    public ResponseEntity<?> updateDirector(@PathVariable("idDirector")Long idDirector) {
+        boolean delete_director_result = directorServiceApi.deleteDirector(idDirector);
+        if(delete_director_result){
+            return ResponseEntity.ok().body(String.format("Director with id %s success delete",idDirector));
+        }else{
+            return ResponseEntity.badRequest().body(String.format("Director with id %s doens't exists",idDirector));
+        }
+    }
+
 }
