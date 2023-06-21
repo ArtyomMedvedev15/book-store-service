@@ -20,8 +20,8 @@ public class BookResponse {
     private Long idBook;
     private String nameBook;
     private String describeBook;
-    private AuthorResponse authorResponse;
-    private StoreResponse storeResponse;
+    private AuthorResponse author;
+    private StoreResponse store;
     private Date dateStartSaleBook;
 
     public static BookResponse fromDomainToDto(Book bookDomain, Author authorDomain, List<Book>authorsBooks,
@@ -30,8 +30,8 @@ public class BookResponse {
                 .idBook(bookDomain.getIdBook())
                 .nameBook(bookDomain.getNameBook())
                 .describeBook(bookDomain.getDescribeBook())
-                .authorResponse(AuthorResponse.fromDomainToDto(authorDomain,authorsBooks))
-                .storeResponse(StoreResponse.fromDomainToDto(storeDomain,directorDomain))
+                .author(AuthorResponse.fromDomainToDto(authorDomain,authorsBooks))
+                .store(StoreResponse.fromDomainToDto(storeDomain,directorDomain))
                 .build();
     }
 }

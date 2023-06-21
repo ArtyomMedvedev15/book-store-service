@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,6 +37,21 @@ public class BookController {
                 .toList();
         log.info("Get all books with endpoint in {}",new Date());
         return ResponseEntity.ok().body(bookList);
+    }
+
+    @GetMapping("/{idbook}")
+    public ResponseEntity<?>getBookById(@PathVariable("idbook")Long idBook){
+        var bookById = bookServiceApi.getById(idBook);
+
+        if (bookById != null) {
+            log.info("Get book with id {} with endpoint in {}", idBook, new Date());
+            return ResponseEntity.ok().body(BookResponse.fromDomainToDto(bookById,authorServiceApi.getById(bookById.getIdAuthorBook()),
+                    authorServiceApi.getAllAuthorBook(bookById.getIdAuthorBook()),storeServiceApi.getById(bookById.getIdStoreBook()),
+                    directorServiceApi.getById(storeServiceApi.getById(bookById.getIdStoreBook()).getIdDirectorStore())));
+        }else{
+            log.error("Book with id {} not found with endpoint in {}", idBook, new Date());
+            return ResponseEntity.badRequest().body(String.format("Book with id %s not found", idBook));
+        }
     }
 
 }
