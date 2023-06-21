@@ -5,7 +5,7 @@ import io.bookstore.domain.Book;
 import java.util.List;
 
 public interface BookServiceApi {
-    Book saveBook(Book bookSave);
+    Book saveBook(Book bookSave) throws Exception;
     Book updateBook(Book bookUpdate);
     Book getById(Long idBook);
     boolean deleteBook(Long idBook);

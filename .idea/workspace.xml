@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Author service api">
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/api/BookServiceApi.java" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Book service api">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/BookServiceApiImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/service/api/BookServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/api/BookServiceApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -307,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687352255958</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Book service api">
+      <created>1687355132769</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687355132769</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +352,7 @@
     <MESSAGE value="Store service api" />
     <MESSAGE value="Store service api implementation" />
     <MESSAGE value="Author service api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Author service api" />
+    <MESSAGE value="Book service api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book service api" />
   </component>
 </project>
