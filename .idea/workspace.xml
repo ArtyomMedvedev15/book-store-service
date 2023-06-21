@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Director controller delete endpoint">
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/controller/DirectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/DirectorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/StoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Response/StoreResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
