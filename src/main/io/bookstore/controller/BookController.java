@@ -5,6 +5,7 @@ import io.bookstore.service.api.BookServiceApi;
 import io.bookstore.service.api.DirectorServiceApi;
 import io.bookstore.service.api.StoreServiceApi;
 import io.bookstore.util.Request.BookSaveRequest;
+import io.bookstore.util.Request.BookUpdateRequest;
 import io.bookstore.util.Response.BookResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -71,6 +72,21 @@ public class BookController {
             log.error("Book with name {} already exists in {}",bookSaveRequest.getNameBook(),new Date());
             return ResponseEntity.badRequest().body(String.format("Book with name %s already exists!",bookSaveRequest.getNameBook()));
         }
+    }
+
+    @PutMapping("/update")
+    public ResponseEntity<?>updateBook(@RequestBody BookUpdateRequest bookUpdateRequest){
+        var book_update_result = bookServiceApi.updateBook(BookUpdateRequest.fromDtoToDomain(bookUpdateRequest));
+
+        if(book_update_result!=null){
+            log.info("Update book with id {} with endpoint in {}",
+                    bookUpdateRequest.getIdBook(),new Date());
+            return ResponseEntity.ok().body(BookResponse.fromDomainToDto(book_update_result,authorServiceApi.getById(book_update_result.getIdAuthorBook()),
+                    authorServiceApi.getAllAuthorBook(book_update_result.getIdAuthorBook()),storeServiceApi.getById(book_update_result.getIdStoreBook()),
+                    directorServiceApi.getById(storeServiceApi.getById(book_update_result.getIdStoreBook()).getIdDirectorStore())));
+        }else{
+            log.error("Cannot update book, check connection to db in {}",new Date());
+            return ResponseEntity.badRequest().body("Error on server side, try later");        }
     }
 
 }
