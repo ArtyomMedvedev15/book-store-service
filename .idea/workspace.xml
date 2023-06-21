@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Store controller get all with endpoint">
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Store controller get by id with endpoint">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Request/StoreSaveRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/StoreController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687365706053</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Store controller get by id with endpoint">
+      <created>1687365978262</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687365978262</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Init commit" />
     <MESSAGE value="Store domain" />
     <MESSAGE value="Add properties file for connection" />
     <MESSAGE value="Add config file for db connection" />
@@ -393,6 +400,7 @@
     <MESSAGE value="Director controller update endpoint" />
     <MESSAGE value="Director controller delete endpoint" />
     <MESSAGE value="Store controller get all with endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store controller get all with endpoint" />
+    <MESSAGE value="Store controller get by id with endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store controller get by id with endpoint" />
   </component>
 </project>

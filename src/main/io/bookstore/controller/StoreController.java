@@ -2,14 +2,12 @@ package io.bookstore.controller;
 
 import io.bookstore.service.api.DirectorServiceApi;
 import io.bookstore.service.api.StoreServiceApi;
+import io.bookstore.util.Request.StoreSaveRequest;
 import io.bookstore.util.Response.StoreResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
@@ -40,6 +38,19 @@ public class StoreController {
         }else{
             log.error("Store with id {} not found in {}",idStore,new Date());
             return ResponseEntity.badRequest().body(String.format("Store with id %s not found",idStore));
+        }
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity<?>saveStore(@RequestBody StoreSaveRequest storeSaveRequest){
+        var store_save_result = storeServiceApi.saveStore(StoreSaveRequest.fromDtoToDomain(storeSaveRequest));
+        if(store_save_result!=null){
+            log.info("Save new store with name {} with endpoint in {}",storeSaveRequest.getNameStore(),new Date());
+            return ResponseEntity.ok().body(StoreResponse.fromDomainToDto(store_save_result,
+                    directorServiceApi.getById(store_save_result.getIdDirectorStore())));
+        }else{
+            log.error("Cannot save new store, check connection to db in {}",new Date());
+            return ResponseEntity.badRequest().body("Error on server side, try later");
         }
     }
 }
