@@ -4,14 +4,12 @@ import io.bookstore.service.api.AuthorServiceApi;
 import io.bookstore.service.api.BookServiceApi;
 import io.bookstore.service.api.DirectorServiceApi;
 import io.bookstore.service.api.StoreServiceApi;
+import io.bookstore.util.Request.BookSaveRequest;
 import io.bookstore.util.Response.BookResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
@@ -51,6 +49,27 @@ public class BookController {
         }else{
             log.error("Book with id {} not found with endpoint in {}", idBook, new Date());
             return ResponseEntity.badRequest().body(String.format("Book with id %s not found", idBook));
+        }
+    }
+
+    @PostMapping("/save")
+    public ResponseEntity<?>saveBook(@RequestBody BookSaveRequest bookSaveRequest){
+        try {
+            var book_save_result = bookServiceApi.saveBook(BookSaveRequest.fromDtoToDomain(bookSaveRequest));
+
+            if(book_save_result!=null){
+                log.info("Save new book with name {} with endpoint in {}",
+                       bookSaveRequest.getNameBook(),new Date());
+                return ResponseEntity.ok().body(BookResponse.fromDomainToDto(book_save_result,authorServiceApi.getById(book_save_result.getIdAuthorBook()),
+                        authorServiceApi.getAllAuthorBook(book_save_result.getIdAuthorBook()),storeServiceApi.getById(book_save_result.getIdStoreBook()),
+                        directorServiceApi.getById(storeServiceApi.getById(book_save_result.getIdStoreBook()).getIdDirectorStore())));
+            }else{
+                log.error("Cannot save new book, check connection to db in {}",new Date());
+                return ResponseEntity.badRequest().body("Error on server side, try later");
+            }
+        } catch (Exception e) {
+            log.error("Book with name {} already exists in {}",bookSaveRequest.getNameBook(),new Date());
+            return ResponseEntity.badRequest().body(String.format("Book with name %s already exists!",bookSaveRequest.getNameBook()));
         }
     }
 
