@@ -72,7 +72,7 @@ public class DirectorController {
             return ResponseEntity.ok().body(String.format("Director with id %s success delete",idDirector));
         }else{
             log.error("Director with id {} doesn't exists in {}",idDirector,new Date());
-            return ResponseEntity.badRequest().body(String.format("Director with id %s doens't exists",idDirector));
+            return ResponseEntity.badRequest().body(String.format("Director with id %s doesn't exists",idDirector));
         }
     }
 

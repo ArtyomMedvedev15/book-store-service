@@ -67,4 +67,17 @@ public class StoreController {
             return ResponseEntity.badRequest().body("Error on server side, try later");
         }
     }
-}
+
+    @DeleteMapping("/delete/{idStore}")
+    public ResponseEntity<?> deleteStore(@PathVariable("idStore")Long idStore) {
+        boolean delete_store_result = storeServiceApi.deleteStore(idStore);
+        if(delete_store_result){
+            log.info("Delete store with id {} with endpoint in {}",idStore,new Date());
+            return ResponseEntity.ok().body(String.format("Store with id %s success delete",idStore));
+        }else{
+            log.error("Store with id {} doesn't exists in {}",idStore,new Date());
+            return ResponseEntity.badRequest().body(String.format("Store with id %s doesn't exists",idStore));
+        }
+    }
+
+    }
