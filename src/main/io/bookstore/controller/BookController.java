@@ -89,4 +89,16 @@ public class BookController {
             return ResponseEntity.badRequest().body("Error on server side, try later");        }
     }
 
+    @DeleteMapping("/delete/{idbook}")
+    public ResponseEntity<?> deleteAuthor(@PathVariable("idbook")Long idbook) {
+        boolean delete_book_result = bookServiceApi.deleteBook(idbook);
+        if(delete_book_result){
+            log.info("Delete book with id {} with endpoint in {}",idbook,new Date());
+            return ResponseEntity.ok().body(String.format("Book with id %s success delete",idbook));
+        }else{
+            log.error("Book with id {} doesn't exists in {}",idbook,new Date());
+            return ResponseEntity.badRequest().body(String.format("Book with id %s doesn't exists",idbook));
+        }
+    }
+
 }
