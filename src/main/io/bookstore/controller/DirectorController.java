@@ -3,6 +3,7 @@ package io.bookstore.controller;
 import io.bookstore.domain.Director;
 import io.bookstore.service.api.DirectorServiceApi;
 import io.bookstore.util.Request.DirectorSaveRequest;
+import io.bookstore.util.Request.DirectorUpdateRequest;
 import io.bookstore.util.Response.DirectorResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -34,7 +35,7 @@ public class DirectorController {
     }
 
     @PostMapping("/save")
-    public ResponseEntity<?> getDirectorById(@RequestBody DirectorSaveRequest directorSaveRequest) {
+    public ResponseEntity<?> saveDirector(@RequestBody DirectorSaveRequest directorSaveRequest) {
         var directorSave = directorServiceApi.saveDirector(DirectorSaveRequest.fromDtoToDomain(directorSaveRequest));
         if(directorSave!=null){
             return ResponseEntity.ok().body(DirectorResponse.fromDomainToDto(directorSave));
@@ -43,4 +44,14 @@ public class DirectorController {
         }
     }
 
+    @PutMapping("/update")
+    public ResponseEntity<?> updateDirector(@RequestBody DirectorUpdateRequest directorUpdateRequest) {
+        var directorUpdate = directorServiceApi.updateDirector(DirectorUpdateRequest.fromDtoToDomain(directorUpdateRequest));
+        if(directorUpdate!=null){
+            return ResponseEntity.ok().body(DirectorResponse.fromDomainToDto(directorUpdate));
+        }else{
+            return ResponseEntity.badRequest().body("Error on server side, try later");
+        }
     }
+
+}
