@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Author service api">
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/AuthorServiceApiImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/api/BookServiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/service/api/AuthorServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/api/AuthorServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/DirectorServiceApiImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/DirectorServiceApiImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/StoreServiceApiImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/StoreServiceApiImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit3 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -165,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StoreServiceApiImplementationTest" />
+        <item itemvalue="JUnit.StoreServiceApiImplementationTest.UpdateStoreTest_WithNullDirector_ReturnTrue" />
+        <item itemvalue="JUnit.StoreServiceApiImplementationTest.GetStoreByIdTest_WithNonExistsId_ReturnTrue" />
         <item itemvalue="JUnit.StoreServiceApiImplementationTest.DeleteStoreTest_WithNonExistsStore_ReturnFalse" />
         <item itemvalue="JUnit.StoreServiceApiImplementationTest.DeleteStoreTest_ReturnTrue" />
-        <item itemvalue="JUnit.StoreServiceApiImplementationTest.GetStoreByIdTest_WithNonExistsId_ReturnTrue" />
-        <item itemvalue="JUnit.StoreServiceApiImplementationTest.UpdateStoreTest_WithNullDirector_ReturnTrue" />
+        <item itemvalue="JUnit.StoreServiceApiImplementationTest" />
       </list>
     </recent_temporary>
   </component>
