@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Store controller update with endpoint">
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/AuthorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Response/AuthorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/domain/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/domain/Author.java" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Author controller get all with endpoint">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/AuthorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687366637047</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Author controller get all with endpoint">
+      <created>1687367619329</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1687367619329</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +400,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add config file for db connection" />
     <MESSAGE value="Create pool connection" />
     <MESSAGE value="Director dao api" />
     <MESSAGE value="Director dao implementation" />
@@ -419,6 +424,7 @@
     <MESSAGE value="Store controller get by id with endpoint" />
     <MESSAGE value="Store controller save with endpoint" />
     <MESSAGE value="Store controller update with endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store controller update with endpoint" />
+    <MESSAGE value="Author controller get all with endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Author controller get all with endpoint" />
   </component>
 </project>
