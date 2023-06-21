@@ -18,6 +18,5 @@ public class Author {
     private String nameAuthor;
     private String sonameAuthor;
     private String fanameAuthor;
-    private List<Book>booksAuthor;
     private Date dateAddToAuthor;
 }
