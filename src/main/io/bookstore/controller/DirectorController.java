@@ -65,7 +65,7 @@ public class DirectorController {
     }
 
     @DeleteMapping("/delete/{idDirector}")
-    public ResponseEntity<?> updateDirector(@PathVariable("idDirector")Long idDirector) {
+    public ResponseEntity<?> deleteDirector(@PathVariable("idDirector")Long idDirector) {
         boolean delete_director_result = directorServiceApi.deleteDirector(idDirector);
         if(delete_director_result){
             log.info("Delete director with id {} with endpoint in {}",idDirector,new Date());

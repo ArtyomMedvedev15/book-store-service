@@ -71,4 +71,16 @@ public class AuthorController {
         }
     }
 
+    @DeleteMapping("/delete/{idAuthor}")
+    public ResponseEntity<?> deleteAuthor(@PathVariable("idAuthor")Long idAuthor) {
+        boolean delete_author_result = authorServiceApi.deleteAuthor(idAuthor);
+        if(delete_author_result){
+            log.info("Delete author with id {} with endpoint in {}",idAuthor,new Date());
+            return ResponseEntity.ok().body(String.format("Author with id %s success delete",idAuthor));
+        }else{
+            log.error("Author with id {} doesn't exists in {}",idAuthor,new Date());
+            return ResponseEntity.badRequest().body(String.format("Author with id %s doesn't exists",idAuthor));
+        }
+    }
+
 }
