@@ -1,7 +1,8 @@
-package io.bookstore.service;
+package io.bookstore.service.implementation;
 
 import io.bookstore.dao.api.DirectorDaoApi;
 import io.bookstore.domain.Director;
+import io.bookstore.service.api.DirectorServiceApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
-public class DirectorServiceApiImplementation implements DirectorServiceApi{
+public class DirectorServiceApiImplementation implements DirectorServiceApi {
 
     private final DirectorDaoApi directorDaoApi;
 
@@ -53,12 +54,17 @@ public class DirectorServiceApiImplementation implements DirectorServiceApi{
 
     @Override
     public boolean deleteDirector(Long idDirector) {
-        boolean delete_director_result = directorDaoApi.deleteDirector(idDirector);
-        if(delete_director_result){
-            log.info("Delete director with id {} in {}",idDirector, new Date());
-            return true;
+        Director directorCheckExists = directorDaoApi.getById(idDirector);
+        if(directorCheckExists!=null) {
+            boolean delete_director_result = directorDaoApi.deleteDirector(idDirector);
+            if (delete_director_result) {
+                log.info("Delete director with id {} in {}", idDirector, new Date());
+                return true;
+            } else {
+                log.error("Error in delete director, check logs in {}", new Date());
+                return false;
+            }
         }else{
-            log.error("Error in delete director, check logs in {}", new Date());
             return false;
         }
     }

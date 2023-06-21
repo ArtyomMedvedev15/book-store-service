@@ -1,4 +1,4 @@
-package io.bookstore.service;
+package io.bookstore.service.api;
 
 import io.bookstore.domain.Director;
 
