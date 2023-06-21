@@ -49,7 +49,6 @@ public class DirectorServiceApiImplementation implements DirectorServiceApi {
             log.error("Cannot find director with id {} in {}",idDirector,new Date());
             return null;
         }
-
     }
 
     @Override
