@@ -28,7 +28,7 @@ public class StoreServiceApiImplementation implements StoreServiceApi {
                 log.info("Save new store in {}", new Date());
                 return storeSave;
             } else {
-                log.error("Error in save new store, check logs in {}", new Date());
+                log.error("Error in save new store {}", new Date());
                 return null;
             }
         } else {
@@ -46,7 +46,7 @@ public class StoreServiceApiImplementation implements StoreServiceApi {
                 log.info("Update store with id {} in {}", storeUpdate.getIdStore(), new Date());
                 return storeUpdate;
             } else {
-                log.error("Error in update store, check logs in {}", new Date());
+                log.error("Error in update store {}", new Date());
                 return null;
             }
         } else {
@@ -75,7 +75,7 @@ public class StoreServiceApiImplementation implements StoreServiceApi {
                 log.info("Delete store with id {} in {}", idStore, new Date());
                 return true;
             } else {
-                log.error("Error in delete store, check logs in {}", new Date());
+                log.error("Error in delete store in {}", new Date());
                 return false;
             }
         } else {

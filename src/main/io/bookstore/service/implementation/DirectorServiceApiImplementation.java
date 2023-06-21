@@ -23,7 +23,7 @@ public class DirectorServiceApiImplementation implements DirectorServiceApi {
             log.info("Save new director in {}", new Date());
             return directorSave;
         }else{
-            log.error("Error in save new director, check logs in {}", new Date());
+            log.error("Error in save new director in {}", new Date());
             return null;
         }
     }
@@ -35,7 +35,7 @@ public class DirectorServiceApiImplementation implements DirectorServiceApi {
             log.info("Update director with id {} in {}",directorUpdate.getId(), new Date());
             return directorUpdate;
         }else{
-            log.error("Error in update director, check logs in {}", new Date());
+            log.error("Error in update director in {}", new Date());
             return null;
         }
     }
@@ -60,7 +60,7 @@ public class DirectorServiceApiImplementation implements DirectorServiceApi {
                 log.info("Delete director with id {} in {}", idDirector, new Date());
                 return true;
             } else {
-                log.error("Error in delete director, check logs in {}", new Date());
+                log.error("Error in delete director in {}", new Date());
                 return false;
             }
         }else{

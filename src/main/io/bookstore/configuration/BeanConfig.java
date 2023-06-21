@@ -8,8 +8,10 @@ import io.bookstore.dao.implementation.AuthorDaoApiImplementation;
 import io.bookstore.dao.implementation.BookDaoApiImplementation;
 import io.bookstore.dao.implementation.DirectorDaoApiImplementation;
 import io.bookstore.dao.implementation.StoreDaoApiImplementation;
+import io.bookstore.service.api.AuthorServiceApi;
 import io.bookstore.service.api.DirectorServiceApi;
 import io.bookstore.service.api.StoreServiceApi;
+import io.bookstore.service.implementation.AuthorServiceApiImplementation;
 import io.bookstore.service.implementation.DirectorServiceApiImplementation;
 import io.bookstore.service.implementation.StoreServiceApiImplementation;
 import org.springframework.context.annotation.Bean;
@@ -44,7 +46,12 @@ public class BeanConfig {
     }
 
     @Bean
-    public StoreServiceApi getStoreApiImpl(){
+    public StoreServiceApi getStoreServiceApiImpl(){
         return new StoreServiceApiImplementation(getStoreDaoApiImpl(),getDirectorServiceApiImpl());
+    }
+
+    @Bean
+    public AuthorServiceApi getAuthorServiceApiImpl(){
+        return new AuthorServiceApiImplementation(getAuthorDaoApiImpl(),getBookDaoApiImpl());
     }
 }
