@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Book dao api implementation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/BookDaoApiImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/dao/implementation/BookDaoApiImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/dao/implementation/BookDaoApiImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/initDataBeforeScript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sqlScript/initDataBeforeScript.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/DirectorServiceApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,16 +15,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="book_dao" />
+        <entry key="$PROJECT_DIR$" value="service" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
