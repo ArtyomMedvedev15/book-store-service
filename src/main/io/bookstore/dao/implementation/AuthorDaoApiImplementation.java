@@ -70,5 +70,6 @@ public class AuthorDaoApiImplementation implements AuthorDaoApi {
     @Override
     public List<Author> getAll() {
         log.info("Get all author in {}",new Date());
-        return databaseConnection.query(SELECT_ALL_QUERY,new BeanPropertyRowMapper<>(Author.class));    }
+        return databaseConnection.query(SELECT_ALL_QUERY,new BeanPropertyRowMapper<>(Author.class));
+    }
 }
