@@ -1,4 +1,4 @@
-package io.bookstore.util;
+package io.bookstore.util.Response;
 
 import io.bookstore.domain.Director;
 import lombok.*;

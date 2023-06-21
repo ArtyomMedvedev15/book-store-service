@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Director controller get all endpoint">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Director controller get by id endpoint">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Request/DirectorSaveRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/controller/DirectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/DirectorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/util/DirectorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Response/DirectorResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687363432453</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Director controller get by id endpoint">
+      <created>1687363658506</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1687363658506</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +362,7 @@
     <MESSAGE value="Author service api" />
     <MESSAGE value="Book service api" />
     <MESSAGE value="Director controller get all endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Director controller get all endpoint" />
+    <MESSAGE value="Director controller get by id endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Director controller get by id endpoint" />
   </component>
 </project>

@@ -2,16 +2,12 @@ package io.bookstore.controller;
 
 import io.bookstore.domain.Director;
 import io.bookstore.service.api.DirectorServiceApi;
-import io.bookstore.util.DirectorResponse;
+import io.bookstore.util.Request.DirectorSaveRequest;
+import io.bookstore.util.Response.DirectorResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.stream.Collectors;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/director")
@@ -37,5 +33,14 @@ public class DirectorController {
         }
     }
 
+    @PostMapping("/save")
+    public ResponseEntity<?> getDirectorById(@RequestBody DirectorSaveRequest directorSaveRequest) {
+        var directorSave = directorServiceApi.saveDirector(DirectorSaveRequest.fromDtoToDomain(directorSaveRequest));
+        if(directorSave!=null){
+            return ResponseEntity.ok().body(DirectorResponse.fromDomainToDto(directorSave));
+        }else{
+            return ResponseEntity.badRequest().body("Error on server side, try later");
+        }
+    }
 
-}
+    }
