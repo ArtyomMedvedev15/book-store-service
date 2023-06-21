@@ -3,6 +3,7 @@ package io.bookstore.controller;
 import io.bookstore.domain.Author;
 import io.bookstore.service.api.AuthorServiceApi;
 import io.bookstore.util.Request.AuthorSaveRequest;
+import io.bookstore.util.Request.AuthorUpdateRequest;
 import io.bookstore.util.Response.AuthorResponse;
 import io.bookstore.util.Response.DirectorResponse;
 import lombok.Getter;
@@ -53,7 +54,21 @@ public class AuthorController {
             log.error("Cannot save new author, check connection to db in {}",new Date());
             return ResponseEntity.badRequest().body("Error on server side, try later");
          }
+    }
 
+    @PutMapping("/update")
+    public ResponseEntity<?>saveAuthor(@RequestBody AuthorUpdateRequest authorUpdateRequest){
+        var author_update_result = authorServiceApi.updateAuthor(AuthorUpdateRequest.fromDtoToDomain(authorUpdateRequest));
+
+        if(author_update_result!=null){
+            log.info("Update author with id {} with endpoint in {}",
+                    authorUpdateRequest.getIdAuthor(),new Date());
+            return ResponseEntity.ok().body(AuthorResponse.fromDomainToDto(author_update_result,
+                    authorServiceApi.getAllAuthorBook(authorUpdateRequest.getIdAuthor())));
+        }else{
+            log.error("Cannot update author, check connection to db in {}",new Date());
+            return ResponseEntity.badRequest().body("Error on server side, try later");
+        }
     }
 
 }

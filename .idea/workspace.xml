@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Author controller get by id with endpoint">
-      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Request/AuthorSaveRequest.java" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Author controller save author with endpoint">
+      <change afterPath="$PROJECT_DIR$/src/main/io/bookstore/util/Request/AuthorUpdateRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/controller/AuthorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -389,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687368112183</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Author controller save author with endpoint">
+      <created>1687369117112</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1687369117112</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Director dao api" />
     <MESSAGE value="Director dao implementation" />
     <MESSAGE value="Store dao api" />
     <MESSAGE value="Store dao api implementation" />
@@ -432,6 +438,7 @@
     <MESSAGE value="Store controller update with endpoint" />
     <MESSAGE value="Author controller get all with endpoint" />
     <MESSAGE value="Author controller get by id with endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Author controller get by id with endpoint" />
+    <MESSAGE value="Author controller save author with endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Author controller save author with endpoint" />
   </component>
 </project>
