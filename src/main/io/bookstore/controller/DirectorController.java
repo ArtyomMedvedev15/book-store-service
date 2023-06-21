@@ -1,10 +1,10 @@
 package io.bookstore.controller;
 
-import io.bookstore.domain.Director;
 import io.bookstore.service.api.DirectorServiceApi;
 import io.bookstore.util.Request.DirectorSaveRequest;
 import io.bookstore.util.Request.DirectorUpdateRequest;
 import io.bookstore.util.Response.DirectorResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +16,7 @@ import java.util.Date;
 @RequestMapping("/api/v1/director")
 @Slf4j
 @RequiredArgsConstructor
+@Tag(name = "Director", description = "Directors request to API")
 public class DirectorController {
 
     private final DirectorServiceApi directorServiceApi;

@@ -7,6 +7,7 @@ import io.bookstore.service.api.StoreServiceApi;
 import io.bookstore.util.Request.BookSaveRequest;
 import io.bookstore.util.Request.BookUpdateRequest;
 import io.bookstore.util.Response.BookResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ import java.util.Date;
 @RequestMapping("/api/v1/book")
 @Slf4j
 @RequiredArgsConstructor
+@Tag(name = "Books", description = "Books request to API")
 public class BookController {
 
     private final BookServiceApi bookServiceApi;

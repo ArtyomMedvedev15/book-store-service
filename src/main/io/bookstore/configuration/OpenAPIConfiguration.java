@@ -13,7 +13,7 @@ import java.util.List;
 
 @Configuration
 public class OpenAPIConfiguration {
-    @Value("${fastwork.openapi.dev-url}")
+    @Value("${book-store-service.openapi.dev-url}")
     private String devUrl;
 
     @Bean

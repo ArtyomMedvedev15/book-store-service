@@ -1,12 +1,10 @@
 package io.bookstore.controller;
 
-import io.bookstore.domain.Author;
 import io.bookstore.service.api.AuthorServiceApi;
 import io.bookstore.util.Request.AuthorSaveRequest;
 import io.bookstore.util.Request.AuthorUpdateRequest;
 import io.bookstore.util.Response.AuthorResponse;
-import io.bookstore.util.Response.DirectorResponse;
-import lombok.Getter;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +17,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/v1/author")
 @Slf4j
 @RequiredArgsConstructor
+@Tag(name = "Authors", description = "Authors request to API")
 public class AuthorController {
 
     private final AuthorServiceApi authorServiceApi;
