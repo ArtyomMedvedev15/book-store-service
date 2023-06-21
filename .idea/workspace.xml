@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Director service api implementation">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/bookstore/service/implementation/DirectorServiceApiImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/configuration/BeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/service/DirectorServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/api/DirectorServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/io/bookstore/service/DirectorServiceApiImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/io/bookstore/service/implementation/DirectorServiceApiImplementation.java" afterDir="false" />
-    </list>
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Director service api implementation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,81 +76,78 @@
       <recent name="io.bookstore.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DirectorServiceApiImplementationTest">
-    <configuration name="DirectorServiceApiImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookDaoApiImplementationTest">
+    <configuration name="AuthorDaoApiImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-store-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.bookstore.service.implementation.*" />
+          <option name="PATTERN" value="io.bookstore.dao.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.bookstore.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="io.bookstore.service.implementation.DirectorServiceApiImplementationTest" />
+      <option name="PACKAGE_NAME" value="io.bookstore.dao.implementation" />
+      <option name="MAIN_CLASS_NAME" value="io.bookstore.dao.implementation.AuthorDaoApiImplementationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectorServiceApiImplementationTest.DeleteDirectorTest_ReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookDaoApiImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-store-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.bookstore.service.implementation.*" />
+          <option name="PATTERN" value="io.bookstore.dao.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.bookstore.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="io.bookstore.service.implementation.DirectorServiceApiImplementationTest" />
-      <option name="METHOD_NAME" value="DeleteDirectorTest_ReturnTrue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="io.bookstore.dao.implementation" />
+      <option name="MAIN_CLASS_NAME" value="io.bookstore.dao.implementation.BookDaoApiImplementationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectorServiceApiImplementationTest.DeleteDirectorTest_WithNonExistsDirector_ReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DirectorDaoApiImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-store-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.bookstore.service.implementation.*" />
+          <option name="PATTERN" value="io.bookstore.dao.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.bookstore.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="io.bookstore.service.implementation.DirectorServiceApiImplementationTest" />
-      <option name="METHOD_NAME" value="DeleteDirectorTest_WithNonExistsDirector_ReturnFalse" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="io.bookstore.dao.implementation" />
+      <option name="MAIN_CLASS_NAME" value="io.bookstore.dao.implementation.DirectorDaoApiImplementationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectorServiceApiImplementationTest.DeleteDirectorTest_Withid8989ReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StoreDaoApiImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-store-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.bookstore.service.implementation.*" />
+          <option name="PATTERN" value="io.bookstore.dao.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.bookstore.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="io.bookstore.service.implementation.DirectorServiceApiImplementationTest" />
-      <option name="METHOD_NAME" value="DeleteDirectorTest_Withid8989ReturnTrue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="io.bookstore.dao.implementation" />
+      <option name="MAIN_CLASS_NAME" value="io.bookstore.dao.implementation.StoreDaoApiImplementationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectorServiceApiImplementationTest.GetAllDirectorTest_ReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StoreDaoApiImplementationTest.SaveStoreTest_ReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-store-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.bookstore.service.implementation.*" />
+          <option name="PATTERN" value="io.bookstore.dao.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.bookstore.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="io.bookstore.service.implementation.DirectorServiceApiImplementationTest" />
-      <option name="METHOD_NAME" value="GetAllDirectorTest_ReturnTrue" />
+      <option name="PACKAGE_NAME" value="io.bookstore.dao.implementation" />
+      <option name="MAIN_CLASS_NAME" value="io.bookstore.dao.implementation.StoreDaoApiImplementationTest" />
+      <option name="METHOD_NAME" value="SaveStoreTest_ReturnTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DirectorServiceApiImplementationTest" />
-        <item itemvalue="JUnit.DirectorServiceApiImplementationTest.GetAllDirectorTest_ReturnTrue" />
-        <item itemvalue="JUnit.DirectorServiceApiImplementationTest.DeleteDirectorTest_WithNonExistsDirector_ReturnFalse" />
-        <item itemvalue="JUnit.DirectorServiceApiImplementationTest.DeleteDirectorTest_Withid8989ReturnTrue" />
-        <item itemvalue="JUnit.DirectorServiceApiImplementationTest.DeleteDirectorTest_ReturnTrue" />
+        <item itemvalue="JUnit.StoreDaoApiImplementationTest.SaveStoreTest_ReturnTrue" />
+        <item itemvalue="JUnit.StoreDaoApiImplementationTest" />
+        <item itemvalue="JUnit.DirectorDaoApiImplementationTest" />
+        <item itemvalue="JUnit.BookDaoApiImplementationTest" />
+        <item itemvalue="JUnit.AuthorDaoApiImplementationTest" />
       </list>
     </recent_temporary>
   </component>
