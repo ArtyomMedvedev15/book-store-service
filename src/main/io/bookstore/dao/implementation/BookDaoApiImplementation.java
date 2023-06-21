@@ -38,7 +38,7 @@ public class BookDaoApiImplementation implements BookDaoApi {
 
     @Override
     public boolean updateBook(Book bookUpdate) {
-        int update_result = databaseConnection.update(INSERT_QUERY,bookUpdate.getNameBook(),bookUpdate.getDescribeBook(),
+        int update_result = databaseConnection.update(UPDATE_QUERY,bookUpdate.getNameBook(),bookUpdate.getDescribeBook(),
                 bookUpdate.getIdAuthorBook(),bookUpdate.getIdStoreBook(),bookUpdate.getDateStartSaleBook(),bookUpdate.getIdBook());
         if(update_result>0) {
             log.info("Update book with id {} in {}",
