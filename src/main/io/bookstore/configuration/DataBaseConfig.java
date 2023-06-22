@@ -26,7 +26,7 @@ public class DataBaseConfig {
 
     @Bean
     @Primary
-    @ConfigurationProperties("bookstore.pollconn")
+    @ConfigurationProperties("bookstore.poolconn")
     public HikariDataSource hikariDataSource() {
         return DataSourceBuilder
                 .create()

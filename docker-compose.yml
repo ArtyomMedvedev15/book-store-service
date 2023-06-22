@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+  db:
+    image: 'postgres:13.1-alpine'
+    container_name: db
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=book-store-service
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  app:
+    build: ../book-store-service
+    restart: on-failure
+    container_name: book-store-service
+    ports:
+      - 8080:8080
+    links:
+      - db
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/book-store-service
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1234
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - BOOKSTORE_POOLCONN.JDBC-URL=jdbc:postgresql://db:5432/book-store-service
+      - BOOKSTORE_POOLCONN.USERNAME=postgres
+      - BOOKSTORE_POOLCONN.PASSWORD=1234
+      - BOOKSTORE_POOLCONN.POOL-SIZE=30
+volumes:
+  db_data:
