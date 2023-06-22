@@ -36,7 +36,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/director/3",
+							"raw": "localhost:8080/api/v1/director/9999",
 							"host": [
 								"localhost"
 							],
@@ -45,7 +45,7 @@
 								"api",
 								"v1",
 								"director",
-								"3"
+								"9999"
 							]
 						}
 					},
@@ -87,7 +87,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/director/delete/5",
+							"raw": "localhost:8080/api/v1/director/delete/7777",
 							"host": [
 								"localhost"
 							],
@@ -97,7 +97,7 @@
 								"v1",
 								"director",
 								"delete",
-								"5"
+								"7777"
 							]
 						}
 					},
@@ -110,7 +110,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\r\n        \"id\": 4,\r\n        \"nameDirector\": \"Updated\",\r\n        \"sonameDirector\": \"Jameson\",\r\n        \"ageDirector\": 33,\r\n        \"dateGetPositionDirector\": \"2023-06-21\"\r\n    }",
+							"raw": "    {\r\n        \"id\": 9999,\r\n        \"nameDirector\": \"Updated\",\r\n        \"sonameDirector\": \"Jameson\",\r\n        \"ageDirector\": 33,\r\n        \"dateGetPositionDirector\": \"2023-06-21\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -165,7 +165,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/store/5",
+							"raw": "localhost:8080/api/v1/store/7777",
 							"host": [
 								"localhost"
 							],
@@ -174,7 +174,7 @@
 								"api",
 								"v1",
 								"store",
-								"5"
+								"7777"
 							]
 						}
 					},
@@ -187,7 +187,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n    \"nameStore\": \"Test\",\r\n    \"cityStore\": \"Test\",\r\n    \"streetStore\": \"Test\",\r\n    \"idDirectorStore\": 4,\r\n    \"dateOpenStore\": \"2023-06-21\"\r\n }",
+							"raw": " {\r\n    \"nameStore\": \"Test\",\r\n    \"cityStore\": \"Test\",\r\n    \"streetStore\": \"Test\",\r\n    \"idDirectorStore\": 9999,\r\n    \"dateOpenStore\": \"2023-06-21\"\r\n }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -217,7 +217,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n     \"idStore\":5,\r\n    \"nameStore\": \"Updated\",\r\n    \"cityStore\": \"Test\",\r\n    \"streetStore\": \"Test\",\r\n    \"idDirectorStore\": 4,\r\n    \"dateOpenStore\": \"2023-06-21\"\r\n }",
+							"raw": " {\r\n     \"idStore\":7777,\r\n    \"nameStore\": \"Updated\",\r\n    \"cityStore\": \"Test\",\r\n    \"streetStore\": \"Test\",\r\n    \"idDirectorStore\": 4,\r\n    \"dateOpenStore\": \"2023-06-21\"\r\n }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -246,7 +246,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/store/delete/5",
+							"raw": "localhost:8080/api/v1/store/delete/8888",
 							"host": [
 								"localhost"
 							],
@@ -256,7 +256,7 @@
 								"v1",
 								"store",
 								"delete",
-								"5"
+								"8888"
 							]
 						}
 					},
@@ -294,7 +294,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/author/2",
+							"raw": "localhost:8080/api/v1/author/7777",
 							"host": [
 								"localhost"
 							],
@@ -303,7 +303,7 @@
 								"api",
 								"v1",
 								"author",
-								"2"
+								"7777"
 							]
 						}
 					},
@@ -346,7 +346,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"idAuthor\":2,\r\n        \"nameAuthor\": \"Update\",\r\n        \"sonameAuthor\": \"Test\",\r\n        \"fanameAuthor\": \"Test\",\r\n        \"dateAddToAuthor\":\"2023-06-23\"\r\n}",
+							"raw": "{\r\n        \"idAuthor\":7777,\r\n        \"nameAuthor\": \"Update\",\r\n        \"sonameAuthor\": \"Test\",\r\n        \"fanameAuthor\": \"Test\",\r\n        \"dateAddToAuthor\":\"2023-06-23\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -375,7 +375,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/author/delete/2",
+							"raw": "localhost:8080/api/v1/author/delete/8888",
 							"host": [
 								"localhost"
 							],
@@ -385,7 +385,7 @@
 								"v1",
 								"author",
 								"delete",
-								"2"
+								"8888"
 							]
 						}
 					},
@@ -423,7 +423,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/book/4",
+							"raw": "localhost:8080/api/v1/book/7777",
 							"host": [
 								"localhost"
 							],
@@ -432,7 +432,7 @@
 								"api",
 								"v1",
 								"book",
-								"4"
+								"7777"
 							]
 						}
 					},
@@ -445,7 +445,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n      \"nameBook\":\"Test\",\r\n      \"describeBook\":\"Test\",\r\n      \"idAuthorBook\":3,\r\n      \"idStoreBook\":6,\r\n      \"dateStartSaleBook\":\"2023-06-22\"\r\n}",
+							"raw": "{\r\n      \"nameBook\":\"Test\",\r\n      \"describeBook\":\"Test\",\r\n      \"idAuthorBook\":7777,\r\n      \"idStoreBook\":7777,\r\n      \"dateStartSaleBook\":\"2023-06-22\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -475,7 +475,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n      \"idBook\":4,\r\n      \"nameBook\":\"Update\",\r\n      \"describeBook\":\"Test\",\r\n      \"idAuthorBook\":3,\r\n      \"idStoreBook\":6,\r\n      \"dateStartSaleBook\":\"2023-06-22\"\r\n}",
+							"raw": "{\r\n      \"idBook\":7777,\r\n      \"nameBook\":\"Update\",\r\n      \"describeBook\":\"Test\",\r\n      \"idAuthorBook\":3,\r\n      \"idStoreBook\":6,\r\n      \"dateStartSaleBook\":\"2023-06-22\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -504,7 +504,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/book/delete/5",
+							"raw": "localhost:8080/api/v1/book/delete/8888",
 							"host": [
 								"localhost"
 							],
@@ -514,7 +514,7 @@
 								"v1",
 								"book",
 								"delete",
-								"5"
+								"8888"
 							]
 						}
 					},
