@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Add docker compose">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database/initDataScript.sql" afterDir="false" />
+    <list default="true" id="b6887c6b-76b3-4946-b467-9c33a80497f5" name="Changes" comment="Add init data script and update postman collection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/AuthorDaoApiImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/BookDaoApiImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/DirectorDaoApiImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/dao/implementation/StoreDaoApiImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/service/implementation/DirectorServiceApiImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/bookstore/service/implementation/StoreServiceApiImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/afterDataScript.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/initDBBeforeScript.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sqlScript/initDataBeforeScript.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit3 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -52,7 +62,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
     &quot;last_directory_selection&quot;: &quot;U:/Work/book-store-service/book-store-service/src/main/io/bookstore&quot;,
-    &quot;last_opened_file_path&quot;: &quot;U:/Work/book-store-service&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Work/book-store-service/src/test/java/io/bookstore&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;53de76a36d0034c148cec5c4f012ab4d&quot;
@@ -65,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="U:\Work\book-store-service\src\test\java\io\bookstore" />
       <recent name="U:\Work\book-store-service\book-store-service\src\test\resources\sqlScript" />
       <recent name="U:\Work\book-store-service\book-store-service\src\test\resources" />
     </key>
@@ -76,8 +87,8 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="io.bookstore.service.implementation" />
-      <recent name="io.bookstore.service" />
       <recent name="io.bookstore.dao.implementation" />
+      <recent name="io.bookstore.service" />
       <recent name="io.bookstore.dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -87,8 +98,21 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install -DSkipTests" />
+      <command value="mvn clean verify" />
+      <command value="mvn clean compile" />
+      <command value="mvn package" />
       <command value="mvn spring-boot:run" />
+      <command value="mvn install" />
+      <command value="mvn clean:clean" />
+      <command value="mvn clean install -Dmaven.repo.local=.m2" />
+      <command value="mvn clean package install " />
+      <command value="mvn idea:idea" />
+      <command value="mvn -U clean install" />
+      <command value="mvn -X" />
       <command value="mvn verify" />
+      <command value="mvn compiler:testCompile" />
+      <command value="mvn clean -DskipTests=true install" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AppBookStore">
@@ -188,7 +212,8 @@
       <workItem from="1687343331939" duration="1905000" />
       <workItem from="1687377594740" duration="76000" />
       <workItem from="1687377706729" duration="3231000" />
-      <workItem from="1687384681977" duration="4177000" />
+      <workItem from="1687384681977" duration="10126000" />
+      <workItem from="1687518242897" duration="1037000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1687246953523</created>
@@ -449,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687409994322</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Add init data script and update postman collection">
+      <created>1687465573722</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1687465573722</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Director service api" />
     <MESSAGE value="Director service api implementation" />
     <MESSAGE value="Store service api" />
     <MESSAGE value="Store service api implementation" />
@@ -492,6 +523,7 @@
     <MESSAGE value="Add configuraton for swagger" />
     <MESSAGE value="Add docker file" />
     <MESSAGE value="Add docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docker compose" />
+    <MESSAGE value="Add init data script and update postman collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add init data script and update postman collection" />
   </component>
 </project>
